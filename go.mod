@@ -1,4 +1,4 @@
-module git.gmtshenzhen.com/geeky-medic/x-lite
+module github.com/geekymedic/x-lite
 
 go 1.14
 
