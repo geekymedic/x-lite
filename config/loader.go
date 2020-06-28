@@ -88,9 +88,9 @@ func LoadRemote(localPath string) error {
 	//if err != nil {
 	//	return errors.By(err)
 	//}
-	//if err = viper.MergeConfigMap(LocalViper.AllSettings()); err != nil {
-	//	return errors.By(err)
-	//}
+	if err := viper.MergeConfigMap(LocalViper.AllSettings()); err != nil {
+		return errors.By(err)
+	}
 	//if err = viper.ReadRemoteConfig(); err != nil {
 	//	return errors.By(err)
 	//}
