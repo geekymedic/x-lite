@@ -7,8 +7,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/framework/types"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/metrics/prometheus"
+	"github.com/geekymedic/x-lite/framework/types"
+	"github.com/geekymedic/x-lite/metrics/prometheus"
 )
 
 func MetricsMiddleWare() func(ctx *gin.Context) {

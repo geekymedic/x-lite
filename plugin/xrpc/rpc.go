@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/plugin"
+	"github.com/geekymedic/x-lite/plugin"
 )
 
 var connections = map[string]*grpc.ClientConn{}

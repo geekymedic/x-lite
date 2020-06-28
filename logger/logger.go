@@ -3,7 +3,7 @@ package logger
 import (
 	"github.com/sirupsen/logrus"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/version"
+	"github.com/geekymedic/x-lite/version"
 )
 
 type Logger interface {

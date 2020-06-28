@@ -7,7 +7,7 @@ import (
 
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/plugin"
+	"github.com/geekymedic/x-lite/plugin"
 )
 
 var ossClient = map[string]*oss.Bucket{}

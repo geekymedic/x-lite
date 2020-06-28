@@ -1,8 +1,8 @@
 package extend
 
 import (
-	"git.gmtshenzhen.com/geeky-medic/x-lite/framework/types"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger"
+	"github.com/geekymedic/x-lite/framework/types"
+	"github.com/geekymedic/x-lite/logger"
 )
 
 func NewSessionLog(session *types.Session) logger.Logger {

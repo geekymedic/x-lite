@@ -6,7 +6,7 @@ import (
 	"database/sql/driver"
 	"time"
 
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 type DB struct {

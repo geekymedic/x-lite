@@ -3,7 +3,7 @@ package bff
 import (
 	"github.com/gin-gonic/gin"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/framework/bff/codes"
+	"github.com/geekymedic/x-lite/framework/bff/codes"
 )
 
 var (

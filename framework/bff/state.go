@@ -11,11 +11,11 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"google.golang.org/grpc/metadata"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/framework/bff/codes"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/framework/types"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger/extend"
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	"github.com/geekymedic/x-lite/framework/bff/codes"
+	"github.com/geekymedic/x-lite/framework/types"
+	"github.com/geekymedic/x-lite/logger"
+	"github.com/geekymedic/x-lite/logger/extend"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 var (

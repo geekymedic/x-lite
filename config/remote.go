@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/viper"
 	"gopkg.in/yaml.v2"
 
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 type Event struct {

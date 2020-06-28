@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/viper"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger"
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	"github.com/geekymedic/x-lite/logger"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 const (

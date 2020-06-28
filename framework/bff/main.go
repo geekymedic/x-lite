@@ -12,10 +12,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/config"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/version"
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	"github.com/geekymedic/x-lite/config"
+	"github.com/geekymedic/x-lite/logger"
+	"github.com/geekymedic/x-lite/version"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 func Main() error {

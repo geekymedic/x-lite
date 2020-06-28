@@ -1,7 +1,7 @@
 package extend
 
 import (
-	"github.com/geekymedic/neon/logger"
+	"github.com/geekymedic/x-lite/logger"
 	"google.golang.org/grpc/grpclog"
 )
 

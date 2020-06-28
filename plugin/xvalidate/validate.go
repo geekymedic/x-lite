@@ -1,3 +1,3 @@
 package xvalidate
 
-import _ "github.com/geekymedic/x-litex-lite/pkg/xvalidator"
+import _ "github.com/geekymedic/x-lite/pkg/xvalidator"

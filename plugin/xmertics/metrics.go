@@ -5,10 +5,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/logger"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/metrics/prometheus"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/plugin"
-	errors "git.gmtshenzhen.com/geeky-medic/x-lite/xerrors"
+	"github.com/geekymedic/x-lite/logger"
+	"github.com/geekymedic/x-lite/metrics/prometheus"
+	"github.com/geekymedic/x-lite/plugin"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 func init() {

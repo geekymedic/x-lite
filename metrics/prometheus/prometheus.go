@@ -8,8 +8,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"git.gmtshenzhen.com/geeky-medic/x-lite/metrics"
-	"git.gmtshenzhen.com/geeky-medic/x-lite/version"
+	"github.com/geekymedic/x-lite/metrics"
+	"github.com/geekymedic/x-lite/version"
 )
 
 const (
