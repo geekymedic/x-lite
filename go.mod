@@ -14,12 +14,13 @@ require (
 	github.com/prometheus/client_golang v1.1.0
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shima-park/agollo v1.1.7
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.6.0
 	github.com/spf13/cobra v0.0.3
 	github.com/spf13/viper v1.7.0
 	github.com/stretchr/testify v1.6.1
 	github.com/zentures/cityhash v0.0.0-20131128155616-cdd6a94144ab
 	go.etcd.io/etcd v3.3.18+incompatible
+	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect
 	google.golang.org/grpc v1.22.1
 	gopkg.in/go-playground/validator.v9 v9.29.1
 	gopkg.in/yaml.v2 v2.2.4
