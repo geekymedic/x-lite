@@ -33,7 +33,7 @@ func init() {
 				dsnList = make(map[string]*DBOptions)
 			)
 
-			err := viper.UnmarshalKey("xdb", &dsnList)
+			err := viper.UnmarshalKey("db", &dsnList)
 
 			if err != nil {
 				return errors.By(err)
