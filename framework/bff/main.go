@@ -29,7 +29,7 @@ func Main() error {
 	var addr = viper.GetString("Address")
 	srv := &http.Server{
 		Addr:    addr,
-		Handler: nil,
+		Handler: _engine,
 	}
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
