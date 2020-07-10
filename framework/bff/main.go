@@ -14,6 +14,7 @@ import (
 
 	"github.com/geekymedic/x-lite/config"
 	"github.com/geekymedic/x-lite/logger"
+	"github.com/geekymedic/x-lite/plugin"
 	"github.com/geekymedic/x-lite/version"
 	errors "github.com/geekymedic/x-lite/xerrors"
 )
@@ -24,6 +25,9 @@ func Main() error {
 	flag.Parse()
 	err := config.LoadRemote(*conf)
 	if err != nil {
+		return errors.By(err)
+	}
+	if err = plugin.LoadPlugins(viper.GetViper()); err != nil {
 		return errors.By(err)
 	}
 	var addr = viper.GetString("Address")
