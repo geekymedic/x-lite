@@ -6,8 +6,9 @@ import (
 	"os"
 	"sort"
 
-	"github.com/geekymedic/neon/logger"
 	"github.com/sirupsen/logrus"
+
+	"github.com/geekymedic/x-lite/logger"
 )
 
 type SimpleFormat struct{}

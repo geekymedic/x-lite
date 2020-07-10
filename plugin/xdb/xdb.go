@@ -4,12 +4,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/geekymedic/neon/utils/db"
-
-	"github.com/geekymedic/neon"
-	"github.com/geekymedic/neon/errors"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/spf13/viper"
+
+	db "github.com/geekymedic/x-lite/pkg/xmysql"
+	"github.com/geekymedic/x-lite/plugin"
+	errors "github.com/geekymedic/x-lite/xerrors"
 )
 
 var (
@@ -25,9 +25,9 @@ func init() {
 		LifeTime int
 	}
 
-	neon.AddPlugin("xdb", func(status neon.PluginStatus, viper *viper.Viper) error {
+	plugin.AddPlugin("db", func(status plugin.Status, viper *viper.Viper) error {
 		switch status {
-		case neon.PluginLoad:
+		case plugin.Load:
 
 			var (
 				dsnList = make(map[string]*DBOptions)

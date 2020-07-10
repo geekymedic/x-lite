@@ -30,11 +30,7 @@ github.com/davecgh/go-spew/spew
 github.com/fsnotify/fsnotify
 # github.com/geekymedic/neon v0.0.0-20200615102113-41aba7b12d13
 ## explicit
-github.com/geekymedic/neon
-github.com/geekymedic/neon/bff/types
-github.com/geekymedic/neon/errors
 github.com/geekymedic/neon/logger
-github.com/geekymedic/neon/utils/db
 github.com/geekymedic/neon/version
 # github.com/gin-contrib/sse v0.0.0-20190301062529-5545eab6dad3
 github.com/gin-contrib/sse
