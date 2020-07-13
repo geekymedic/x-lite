@@ -84,27 +84,36 @@ func LoadRemote(localPath string) error {
 		XLiteConfigEndpoint, viper.Get(XLiteConfigEndpoint),
 		XLiteConfigPath, viper.Get(XLiteConfigPath),
 		XLiteConfigSecret, viper.Get(XLiteConfigSecret)).Debug("config env trace")
-	err := viper.AddSecureRemoteProvider(viper.GetString(XLiteConfigProvider),
-		viper.GetString(XLiteConfigEndpoint),
-		viper.GetString(XLiteConfigPath),
-		viper.GetString(XLiteConfigSecret))
-	if err != nil {
-		return errors.By(err)
-	}
-	if err := viper.MergeConfigMap(LocalViper.AllSettings()); err != nil {
-		return errors.By(err)
-	}
-	if err = viper.ReadRemoteConfig(); err != nil {
-		return errors.By(err)
+	provider := viper.GetString(XLiteConfigProvider)
+	var err error
+	if provider != "" {
+		err = viper.AddSecureRemoteProvider(provider,
+			viper.GetString(XLiteConfigEndpoint),
+			viper.GetString(XLiteConfigPath),
+			viper.GetString(XLiteConfigSecret))
+		if err != nil {
+			return errors.By(err)
+		}
 	}
 	if err = viper.MergeConfigMap(LocalViper.AllSettings()); err != nil {
 		return errors.By(err)
 	}
-	if err = viper.GetViper().WatchRemoteConfigOnChannel(); err != nil {
+	if provider != "" {
+		if err = viper.ReadRemoteConfig(); err != nil {
+			return errors.By(err)
+		}
+	}
+
+	if err = viper.MergeConfigMap(LocalViper.AllSettings()); err != nil {
 		return errors.By(err)
 	}
-	// Bind remote viper
-	RemoterViper = viper.GetViper()
-	fmt.Fprintf(os.Stdout, "Load remote config, provider is %s\n", XLiteConfigProvider)
+	if provider != "" {
+		if err = viper.GetViper().WatchRemoteConfigOnChannel(); err != nil {
+			return errors.By(err)
+		}
+		// Bind remote viper
+		RemoterViper = viper.GetViper()
+		fmt.Fprintf(os.Stdout, "Load remote config, provider is %s\n", XLiteConfigProvider)
+	}
 	return nil
 }
