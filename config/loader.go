@@ -19,11 +19,11 @@ const (
 )
 
 const (
-	XLiteMode           = "X-LITE_MODE"
-	XLiteConfigProvider = "X-LITE_CONFIG_PROVIDER"
-	XLiteConfigEndpoint = "X-LITE_CONFIG_ENDPOINT"
-	XLiteConfigPath     = "X-LITE_CONFIG_PATH"
-	XLiteConfigSecret   = "X-LITE_CONFIG_SECRET"
+	XLiteMode           = "X_LITE_MODE"
+	XLiteConfigProvider = "X_LITE_CONFIG_PROVIDER"
+	XLiteConfigEndpoint = "X_LITE_CONFIG_ENDPOINT"
+	XLiteConfigPath     = "X_LITE_CONFIG_PATH"
+	XLiteConfigSecret   = "X_LITE_CONFIG_SECRET"
 )
 
 func init() {
